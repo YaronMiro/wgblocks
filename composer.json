@@ -1,0 +1,28 @@
+{
+    "name": "webpals/wg-blocks",
+    "description": "Webpals Gutenberg Blocks Plugin",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Webpals",
+            "email": "info@webpals.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+	},
+    "minimum-stability": "stable",
+    "require": {
+        "php-di/php-di": "^6.0",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webpals\\WgBlocks\\": "./",
+			"Webpals\\WgBlocks\\Blocks\\": "./blocks",
+            "Webpals\\WgBlocks\\Common\\": "./common"
+        }
+    }
+}
